@@ -125,6 +125,8 @@ hermes doctor       # Diagnose any issues
 
 ## Skip the API-key collection — Nous Portal
 
+Provider research has already been performed in this workspace; network availability must be established by an explicit live check rather than inferred from prior documentation work.
+
 Hermes works with whatever provider you want — that's not changing. But if you'd rather not collect five separate API keys for the model, web search, image generation, TTS, and a cloud browser, **[Nous Portal](https://portal.nousresearch.com)** covers all of them under one subscription:
 
 - **300+ models** — pick any of them with `/model <name>`

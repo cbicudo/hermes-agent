@@ -1,0 +1,466 @@
+{
+  "changed_files": 18,
+  "mode": "dry-run",
+  "profile_count": 9,
+  "profiles": [
+    {
+      "config": {
+        "after_lines": 705,
+        "after_sha256_prefix": "170b055bb400c906",
+        "allowed_models_count": 16,
+        "before_lines": 1234,
+        "before_sha256_prefix": "69fd3013dc252644",
+        "config": "/home/n8nadmin/.hermes/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [
+          "deepinfra",
+          "deepseek-provider",
+          "fireworks-provider",
+          "gemini-provider",
+          "huggingface-provider",
+          "kilocode-provider",
+          "ollama-cloud-provider",
+          "opencode-zen-provider",
+          "zai-provider"
+        ],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "custom",
+          "deepseek",
+          "gemini",
+          "huggingface",
+          "opencode",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 303,
+        "after_sha256_prefix": "2ef34b78ca3f6a71",
+        "before_lines": 308,
+        "before_sha256_prefix": "83b9848fff00bf1c",
+        "env": "/home/n8nadmin/.hermes/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "FIRECRAWL_API_KEY",
+          "FIRECRAWL_API_URL",
+          "NOTION_API_KEY",
+          "SUPERMEMORY_API_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "GLM_API_KEY",
+          "HF_TOKEN",
+          "OLLAMA_API_KEY",
+          "OPENCODE_GO_API_KEY",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "global"
+    },
+    {
+      "config": {
+        "after_lines": 652,
+        "after_sha256_prefix": "916d300fc1216203",
+        "allowed_models_count": 17,
+        "before_lines": 634,
+        "before_sha256_prefix": "ea0499c84a43b4d0",
+        "config": "/home/n8nadmin/.hermes/profiles/apolo/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [
+          "deepseek-provider",
+          "gemini-provider",
+          "huggingface-provider",
+          "kilocode-provider",
+          "ollama-cloud-provider",
+          "opencode-zen-provider",
+          "zai-provider"
+        ],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "deepseek",
+          "huggingface",
+          "opencode",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 301,
+        "after_sha256_prefix": "d930783ea9a0a2bb",
+        "before_lines": 303,
+        "before_sha256_prefix": "4ab8b1f6f25f0e39",
+        "env": "/home/n8nadmin/.hermes/profiles/apolo/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "FIRECRAWL_API_KEY",
+          "FIRECRAWL_API_URL",
+          "SUPERMEMORY_API_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "HF_TOKEN",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "apolo"
+    },
+    {
+      "config": {
+        "after_lines": 657,
+        "after_sha256_prefix": "bfa3efead2c438f9",
+        "allowed_models_count": 17,
+        "before_lines": 639,
+        "before_sha256_prefix": "85e8c569e8ae8f18",
+        "config": "/home/n8nadmin/.hermes/profiles/atena/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [
+          "deepseek-provider",
+          "gemini-provider",
+          "huggingface-provider",
+          "kilocode-provider",
+          "ollama-cloud-provider",
+          "opencode-zen-provider",
+          "zai-provider"
+        ],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "deepseek",
+          "huggingface",
+          "opencode",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 301,
+        "after_sha256_prefix": "d930783ea9a0a2bb",
+        "before_lines": 303,
+        "before_sha256_prefix": "4ab8b1f6f25f0e39",
+        "env": "/home/n8nadmin/.hermes/profiles/atena/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "FIRECRAWL_API_KEY",
+          "FIRECRAWL_API_URL",
+          "SUPERMEMORY_API_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "HF_TOKEN",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "atena"
+    },
+    {
+      "config": {
+        "after_lines": 80,
+        "after_sha256_prefix": "85bec79c139b5a4a",
+        "allowed_models_count": 6,
+        "before_lines": 104,
+        "before_sha256_prefix": "afde183b751ebe9d",
+        "config": "/home/n8nadmin/.hermes/profiles/default/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "custom",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 11,
+        "after_sha256_prefix": "4ff65f1b675cb411",
+        "before_lines": 10,
+        "before_sha256_prefix": "0bae958d59c4819d",
+        "env": "/home/n8nadmin/.hermes/profiles/default/.env",
+        "preserved_operational_keys_present": [
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL"
+        ],
+        "removed_legacy_env_keys": [
+          "OPENCODE_ZEN_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "default"
+    },
+    {
+      "config": {
+        "after_lines": 81,
+        "after_sha256_prefix": "c76c3f4e264f80f7",
+        "allowed_models_count": 7,
+        "before_lines": 68,
+        "before_sha256_prefix": "45f336ec99ba2a97",
+        "config": "/home/n8nadmin/.hermes/profiles/dev/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "custom"
+        ]
+      },
+      "env": {
+        "after_lines": 4,
+        "after_sha256_prefix": "09ff04542df8257d",
+        "before_lines": 2,
+        "before_sha256_prefix": "fb2a3238dd2a930a",
+        "env": "/home/n8nadmin/.hermes/profiles/dev/.env",
+        "preserved_operational_keys_present": [],
+        "removed_legacy_env_keys": [],
+        "secrets_redacted": true
+      },
+      "name": "dev"
+    },
+    {
+      "config": {
+        "after_lines": 659,
+        "after_sha256_prefix": "0ef7ce3a4d40f3f5",
+        "allowed_models_count": 17,
+        "before_lines": 641,
+        "before_sha256_prefix": "b1e6cf72e33c5e6f",
+        "config": "/home/n8nadmin/.hermes/profiles/hefesto/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [
+          "deepseek-provider",
+          "gemini-provider",
+          "huggingface-provider",
+          "kilocode-provider",
+          "ollama-cloud-provider",
+          "opencode-zen-provider",
+          "zai-provider"
+        ],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "custom",
+          "deepseek",
+          "huggingface",
+          "opencode",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 301,
+        "after_sha256_prefix": "d930783ea9a0a2bb",
+        "before_lines": 303,
+        "before_sha256_prefix": "4ab8b1f6f25f0e39",
+        "env": "/home/n8nadmin/.hermes/profiles/hefesto/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "FIRECRAWL_API_KEY",
+          "FIRECRAWL_API_URL",
+          "SUPERMEMORY_API_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "HF_TOKEN",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "hefesto"
+    },
+    {
+      "config": {
+        "after_lines": 652,
+        "after_sha256_prefix": "5ea71393ff143116",
+        "allowed_models_count": 17,
+        "before_lines": 634,
+        "before_sha256_prefix": "e1d7029bbc74d0dd",
+        "config": "/home/n8nadmin/.hermes/profiles/kratos/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [
+          "deepseek-provider",
+          "gemini-provider",
+          "huggingface-provider",
+          "kilocode-provider",
+          "ollama-cloud-provider",
+          "opencode-zen-provider",
+          "zai-provider"
+        ],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "deepseek",
+          "huggingface",
+          "opencode",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 301,
+        "after_sha256_prefix": "d930783ea9a0a2bb",
+        "before_lines": 303,
+        "before_sha256_prefix": "4ab8b1f6f25f0e39",
+        "env": "/home/n8nadmin/.hermes/profiles/kratos/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "FIRECRAWL_API_KEY",
+          "FIRECRAWL_API_URL",
+          "SUPERMEMORY_API_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "HF_TOKEN",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "kratos"
+    },
+    {
+      "config": {
+        "after_lines": 96,
+        "after_sha256_prefix": "478b4e2c5fe092d7",
+        "allowed_models_count": 7,
+        "before_lines": 73,
+        "before_sha256_prefix": "3cf07cfe031d6cbc",
+        "config": "/home/n8nadmin/.hermes/profiles/marketing/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "custom"
+        ]
+      },
+      "env": {
+        "after_lines": 298,
+        "after_sha256_prefix": "26a4666e462d76b9",
+        "before_lines": 300,
+        "before_sha256_prefix": "e82d0acdbc16a257",
+        "env": "/home/n8nadmin/.hermes/profiles/marketing/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "HF_TOKEN",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "marketing"
+    },
+    {
+      "config": {
+        "after_lines": 652,
+        "after_sha256_prefix": "916d300fc1216203",
+        "allowed_models_count": 17,
+        "before_lines": 634,
+        "before_sha256_prefix": "ea0499c84a43b4d0",
+        "config": "/home/n8nadmin/.hermes/profiles/prometeu/config.yaml",
+        "fallback_providers_type": "list",
+        "legacy_inference_plugins_disabled": [
+          "deepseek-provider",
+          "gemini-provider",
+          "huggingface-provider",
+          "kilocode-provider",
+          "ollama-cloud-provider",
+          "opencode-zen-provider",
+          "zai-provider"
+        ],
+        "obsolete_models_list_removed": true,
+        "providers_after": [
+          "nous-api",
+          "opencodex"
+        ],
+        "providers_before": [
+          "deepseek",
+          "huggingface",
+          "opencode",
+          "opencodex"
+        ]
+      },
+      "env": {
+        "after_lines": 301,
+        "after_sha256_prefix": "d930783ea9a0a2bb",
+        "before_lines": 303,
+        "before_sha256_prefix": "4ab8b1f6f25f0e39",
+        "env": "/home/n8nadmin/.hermes/profiles/prometeu/.env",
+        "preserved_operational_keys_present": [
+          "API_SERVER_KEY",
+          "FIRECRAWL_API_KEY",
+          "FIRECRAWL_API_URL",
+          "SUPERMEMORY_API_KEY",
+          "TELEGRAM_ALLOWED_USERS",
+          "TELEGRAM_BOT_TOKEN",
+          "TELEGRAM_HOME_CHANNEL",
+          "TELEGRAM_HOME_CHANNEL_THREAD_ID"
+        ],
+        "removed_legacy_env_keys": [
+          "DEEPSEEK_API_KEY",
+          "HF_TOKEN",
+          "OPENCODE_ZEN_API_KEY",
+          "OPENROUTER_API_KEY"
+        ],
+        "secrets_redacted": true
+      },
+      "name": "prometeu"
+    }
+  ],
+  "root": "/home/n8nadmin/.hermes",
+  "schema": 1,
+  "secrets_redacted": true
+}
