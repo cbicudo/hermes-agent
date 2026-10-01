@@ -1,0 +1,18 @@
+# Sanitized custom-provider example: credentials belong in .env.
+model:
+  default: orchestrator
+  provider: opencodex
+  base_url: http://127.0.0.1:10100/v1
+providers:
+  opencodex:
+    base_url: http://127.0.0.1:10100/v1
+    key_env: OPENCODEX_API_KEY
+    api_mode: chat_completions
+    discover_models: false
+    models: [orchestrator, reasoning, coding, fast, auxiliar, vision]
+  nous-api:
+    base_url: https://inference-api.nousresearch.com/v1
+    key_env: NOUS_API_KEY
+    api_mode: chat_completions
+    discover_models: true
+    default_model: "<listed-by-nous-model>"

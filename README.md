@@ -3,6 +3,9 @@
 </p>
 
 # Hermes Agent ☤
+
+Custom local inference can use only `opencodex` and official `nous-api`.
+Keep credentials in `OPENCODEX_API_KEY` and `NOUS_API_KEY` environment variables.
 <p align="center">
   <a href="https://hermes-agent.nousresearch.com/">Hermes Agent</a> | <a href="https://hermes-agent.nousresearch.com/">Hermes Desktop</a>
 </p>
