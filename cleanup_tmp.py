@@ -15,7 +15,7 @@ NOUS_URL = 'https://inference-api.nousresearch.com/v1'
 ALIASES = ('orchestrator', 'reasoning', 'coding', 'fast', 'auxiliar', 'vision')
 MODEL_REPLACEMENTS = {'fallback-coding': 'coding', 'fallback-reasoning': 'reasoning', 'openai/gpt-5.6-luna': 'gpt-5.6-luna', 'claude-opus-4-6': 'Cheaper/claude-opus-4.6'}
 LEGACY_INFERENCE_PREFIXES = ('NVIDIA_', 'OPENAI_', 'ANTHROPIC_', 'DEEPSEEK_', 'GEMINI_', 'BEDROCK_', 'AWS_', 'HF_', 'HUGGINGFACE_', 'OLLAMA_', 'MISTRAL_', 'ELEVENLABS_', 'MINIMAX_', 'GLM_', 'ZAI_', 'OPENROUTER_', 'OPENCODE_')
-INFERENCE_ROOTS = {'model', 'auxiliary', 'memory', 'delegation', 'moa', 'fallback_providers'}
+INFERENCE_ROOTS = {'model', 'auxiliary', 'delegation', 'moa', 'fallback_providers'}
 
 
 def pdir(name): return ROOT if name == 'root' else ROOT / 'profiles' / name
