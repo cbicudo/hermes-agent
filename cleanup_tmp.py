@@ -127,6 +127,10 @@ def prune_defaults(value, default):
     if isinstance(value, dict) and isinstance(default, dict):
         out = {}
         for key, child in value.items():
+            # Config version is loader metadata, not a removable default value.
+            if key == '_config_version':
+                out[key] = child
+                continue
             if key not in default: out[key] = child; continue
             candidate = prune_defaults(child, default[key])
             if candidate != default[key]: out[key] = candidate

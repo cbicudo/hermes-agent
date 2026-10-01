@@ -4,6 +4,8 @@ from __future__ import annotations
 import json, os, re, subprocess, sys
 from pathlib import Path
 ROOT=Path('/home/n8nadmin/.hermes'); NAMES=('root','apolo','atena','default','dev','hefesto','kratos','marketing','prometeu'); ALLOWED={'custom:opencodex','custom:nous-api'}
+VENV_PYTHON=Path('/home/n8nadmin/.hermes/hermes-agent/venv/bin/python')
+SOURCE_DIR='/home/n8nadmin/.hermes/hermes-agent'
 def home(n): return ROOT if n=='root' else ROOT/'profiles'/n
 def runtime(n):
  code='''import json,os
@@ -11,7 +13,11 @@ from hermes_cli.env_loader import load_hermes_dotenv
 load_hermes_dotenv(hermes_home=os.environ["HERMES_HOME"],load_external_secrets=False)
 from hermes_cli.config import load_config
 c=load_config(); print(json.dumps({"providers":sorted(c.get("providers",{})),"default":c.get("model",{}).get("default"),"fallback":c.get("fallback_providers",[]),"memory_provider":c.get("memory",{}).get("provider")}))'''
- r=subprocess.run([sys.executable,'-c',code],env=dict(os.environ,HERMES_HOME=str(home(n))),capture_output=True,text=True,check=True)
+ env = dict(os.environ, HERMES_HOME=str(home(n)))
+ env['PYTHONPATH'] = SOURCE_DIR + (':' + env['PYTHONPATH'] if env.get('PYTHONPATH') else '')
+ r=subprocess.run([str(VENV_PYTHON),'-c',code],env=env,cwd=SOURCE_DIR,capture_output=True,text=True)
+ if r.returncode:
+  raise RuntimeError(f'{n}: config load failed: {r.stderr.strip()[-500:]}')
  d=json.loads(r.stdout)
  if d['providers']!=['nous-api','opencodex']: raise RuntimeError(f'{n}: providers')
  return d
